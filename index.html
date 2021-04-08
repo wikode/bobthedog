@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>BoB the Dog</title>
+  </head>
+  <body>
+    <nav>
+      <div class="theme-btn invisible"></div>
+      <ul>
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="theme-btn" id="themeBtn">
+        <ion-icon name="moon" id="moonBtn"></ion-icon>
+        <ion-icon name="sunny" id="sunBtn" class="invisible dnone"></ion-icon>
+      </div>
+    </nav>
+    <header>
+      <h1>BoB the <span class="rose">Dog</span></h1>
+      <div id="header_background"></div>
+    </header>
+    <section id="presentation">
+      <div>
+        <img src="./images/chien1.jpg" alt="BoB the Dog" />
+      </div>
+      <div id="presentation_text">
+        <h2>Présentation</h2>
+        <p>Je suis BoB, un modèle instagram <strong>depuis 2013.</strong></p>
+        <p>Je suis capable de m'adapter à chaque décor, chaque tenue, et chaque expression que le photographe souhaite pour me mettre en valeur.</p>
+        <p>
+          Mes portraits m'ont valu plusieurs prix sur la scène internationale mais j'excelle plus particulièrement à <em>Los Angeles</em> où je vis
+          aujourd'hui avec ma femme et mes deux enfants.
+        </p>
+        <p>Sur mon temps libre, rien ne vaut une promenade dans le parc, ou la chasse aux balles de tennis.</p>
+      </div>
+    </section>
+
+    <section id="galerie">
+      <h2>Galerie</h2>
+      <p>Voici quelques-uns de mes portraits personnels :</p>
+      <div id="mesphotos">
+        <img src="./images/chien2.jpg" alt="photo de mes albums" />
+        <img src="./images/chien3.jpg" alt="photo de mes albums" />
+        <img src="./images/chien4.jpg" alt="photo de mes albums" />
+        <img src="./images/chien5.jpg" alt="photo de mes albums" />
+      </div>
+      <a class="btnRose" href="">En voir plus &rarr;</a>
+    </section>
+
+    <section id="contact">
+      <h2>Me contacter</h2>
+      <p>Envie de travailler avec moi ? Discutons-en autour d'un bon bol de croquettes ! <br />Pour me joindre :</p>
+
+      <form action="mailto:bobthedog@mail.com">
+        <label for="prenom">Votre prénom</label>
+        <input type="text" id="prenom" placeholder="Prénom" required />
+        <label for="email">Votre email</label>
+        <input type="email" id="email" placeholder="exemple@exemple.com" required />
+        <label for="message">Votre message</label>
+        <textarea name="message" id="message" required placeholder="Votre message ..."></textarea>
+
+        <button class="btnRose" type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>Projet 2021 - &copy; Wikode Medias</p>
+      <div id="divSocial">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <script>
+      const moonBtn = document.getElementById("moonBtn");
+      const sunBtn = document.getElementById("sunBtn");
+      const themeBtn = document.getElementById("themeBtn");
+      const bodyEl = document.getElementsByTagName("body")[0];
+
+      themeBtn.addEventListener("click", () => {
+        bodyEl.classList.toggle("dark");
+        moonBtn.classList.toggle("invisible");
+        moonBtn.classList.toggle("dnone");
+        sunBtn.classList.toggle("invisible");
+        sunBtn.classList.toggle("dnone");
+      });
+    </script>
+  </body>
+</html>

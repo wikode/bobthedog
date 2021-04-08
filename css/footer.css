@@ -1,0 +1,29 @@
+footer {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  color: #ffffff;
+  font-size: 14px;
+  padding: 15px;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer div#divSocial {
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+footer div#divSocial a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer div#divSocial a:hover {
+  color: var(--rose);
+}

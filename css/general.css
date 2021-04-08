@@ -1,0 +1,79 @@
+/* RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea {
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+
+body {
+  max-width: 100vw;
+  font-family: sans-serif;
+  padding-top: 60px;
+  font-size: 18px;
+}
+
+body.dark .btnRose {
+  background-color: var(--grey);
+  color: var(--black);
+}
+body.dark .btnRose:hover,
+.btnRose:hover {
+  background-color: var(--rose);
+  color: var(--black);
+}
+
+/* GENERAL */
+
+h2 {
+  display: inline-block;
+  padding: 0 10px 0 0;
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 70%, var(--rose) 70%, var(--rose) 90%);
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+section {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.btnRose {
+  cursor: pointer;
+  display: block;
+  width: max-content;
+  text-decoration: none;
+  padding: 10px 60px;
+  border-radius: 30px;
+  background-color: var(--black);
+  color: #ffffff;
+  margin: 30px auto;
+  transition: all 0.3s ease;
+}
+
+/* UTILITAIRES */
+.invisible {
+  visibility: hidden;
+}
+
+.dnone {
+  display: none;
+}
+
+.rose {
+  color: var(--rose);
+}

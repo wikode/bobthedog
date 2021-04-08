@@ -1,0 +1,52 @@
+@media screen and (max-width: 1000px) {
+  section {
+    width: 90%;
+  }
+
+  header {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    height: 40vh;
+  }
+
+  header h1 {
+    font-size: 50px;
+  }
+
+  section#presentation > div img {
+    max-height: 200px;
+  }
+
+  div#mesphotos {
+    flex-wrap: wrap;
+  }
+
+  div#mesphotos img {
+    width: 50%;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body,
+  form input,
+  form textarea {
+    font-size: 14px;
+  }
+
+  nav ul li a {
+    padding: 0 15px;
+  }
+
+  h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Fondamento&display=swap");
+@import "./css/general.css";
+@import "./css/navigation.css";
+@import "./css/header.css";
+@import "./css/section_presentation.css";
+@import "./css/section_galerie.css";
+@import "./css/section_contact.css";
+@import "./css/footer.css";
+@import "./css/responsive.css";
+
+:root {
+  --rose: #ff92d2;
+  --ombre: 0 2px 5px rgba(0, 0, 0, 0.3);
+  --black: #222222;
+  --grey: #eeeeee;
+}
+
+body.dark {
+  color: var(--grey);
+  background-color: var(--black);
+}

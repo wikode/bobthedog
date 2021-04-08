@@ -1,0 +1,15 @@
+IMAGES :
+https://unsplash.com/photos/Mv9hjnEUHR4 (toutes en small)
+https://unsplash.com/photos/pOUA8Xay514
+https://unsplash.com/photos/K4mSJ7kc0As
+https://unsplash.com/photos/AQRp2NH-O8k
+https://unsplash.com/photos/DziZIYOGAHc
+
+https://unsplash.com/photos/6Io0psUdasY en large (header)
+
+ICONES :
+https://ionicons.com/
+
+POLICE :
+https://fonts.google.com/specimen/Fondamento#standard-styles
+

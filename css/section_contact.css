@@ -1,0 +1,41 @@
+form {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.07);
+  padding: 30px 30px 0px 30px;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  margin-bottom: 25px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border-bottom: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  font-size: 16px;
+  font-family: inherit;
+}
+form textarea {
+  height: 200px;
+  margin-bottom: 0;
+}
+
+form input:valid,
+form textarea:valid {
+  border-bottom: 5px solid #07c700;
+}
+
+form input:focus:invalid,
+form textarea:focus:invalid {
+  border-bottom: 5px solid #e45300;
+}
